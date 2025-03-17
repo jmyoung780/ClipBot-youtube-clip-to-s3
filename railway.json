@@ -1,0 +1,10 @@
+{
+    "build": {
+      "builder": "NIXPACKS",
+      "buildCommand": "apt-get update && apt-get install -y ffmpeg && npm install"
+    },
+    "deploy": {
+      "startCommand": "node index.js",
+      "restartPolicyType": "ON_FAILURE"
+    }
+  }
